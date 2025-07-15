@@ -54,10 +54,10 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="min-h-[110vh] px-10 py-20 bg-white text-white font-fredoka"
+      className="min-h-screen md:min-h-[110vh] px-4 md:px-10 py-20 bg-white text-white font-fredoka"
     >
-      <div className="mb-12 flex justify-between items-center">
-        <h1 className="text-4xl font-bold text-black">
+      <div className="mb-12 flex flex-col md:flex-row justify-between items-center gap-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-black text-center md:text-left">
           Let's Have a Look at
           <br /> my <span className="text-jeruk">Portfolio</span>
         </h1>
@@ -118,26 +118,32 @@ const Project = () => {
           </button>
         )}
       </div>
-      <div className="flex items-center text-center justify-center gap-4 content-center mt-8 ">
-        <h1 className="text-black border rounded-full p-2 bg-zinc-300">
+
+      {/* Tags */}
+      <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
+        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
           UI/UX Design
-        </h1>
-        <h1 className="text-black border rounded-full p-2 bg-zinc-300">
+        </span>
+        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
           Web Developer
-        </h1>
-        <h1 className="text-black border rounded-full p-2 bg-zinc-300">
+        </span>
+        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
           Mobile Developer
-        </h1>
+        </span>
       </div>
-      <div>
-        <h1 className="text-black text-center mt-10">
+
+      {/* More Text */}
+      <div className="mt-10">
+        <h1 className="text-black text-center text-xl md:text-2xl">
           <span className="text-jeruk">More</span> projects coming soon!
         </h1>
       </div>
-      <div className="text-center mt-40">
-        <h1 className="text-4xl font-bold text-black">
-          Have An Awesome Project <br /> Idea?{" "}
-          <span className="text-jeruk">Let's Discuss</span>
+
+      {/* Contact Section */}
+      <div className="text-center mt-24">
+        <h1 className="text-2xl md:text-4xl font-bold text-black">
+          Have An Awesome Project <br className="block md:hidden" />
+          Idea? <span className="text-jeruk">Let's Discuss</span>
         </h1>
 
         {/* Form Email */}

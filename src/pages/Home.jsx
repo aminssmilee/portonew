@@ -21,7 +21,7 @@ const Home = () => {
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold roboto">
               I'm{" "}
-              <span className="text-red-500 md:text-4xl text-4xl block md:inline">
+              <span className="text-red-500 text-2xl md:text-4xl text-4xl block md:inline">
                 <DecryptedText
                   text="Stalis Ahmad"
                   className="text-red-500"
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
 
           {/* Typewriter */}
-          <span className="text-black font-bold text-2xl md:text-9xl text-center">
+          <span className="text-black font-bold text-4xl md:text-9xl text-center">
             <Typewriter
               words={[
                 "Web Developer",
@@ -54,7 +54,8 @@ const Home = () => {
           </span>
 
           {/* Left Bottom Text & Buttons */}
-          <div className="absolute bottom-0 left-0 mb-10 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500">
+          {/* Kiri: Teks dan tombol Hire Me & CV */}
+          <div className="absolute bottom-0 left-0 mb-10 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 translate-y-[-13rem] md:translate-y-0">
             <p>
               I am a passionate developer <br /> with a keen interest in
               creating <br /> innovative solutions.
@@ -78,22 +79,23 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Bottom Experience */}
-          <div className="absolute right-0 bottom-0 mb-10 mr-4 md:mr-20 text-center text-sm md:text-xl">
+          {/* Kanan: ★ 2 Years */}
+          <div className="absolute right-0 bottom-0 mb-10 mr-4 md:mr-20 text-center text-sm md:text-xl translate-y-[-3rem] md:translate-y-0">
             <h3 className="text-lg md:text-2xl font-bold text-gray-700">
               ★ 2 Years
             </h3>
             <p className="text-gray-500">Expertise</p>
           </div>
 
-          {/* Image and Circle */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
-            <div className="w-[18rem] md:w-[40rem] h-[10rem] md:h-[20rem] bg-jeruk rounded-t-full z-0"></div>
-            <img
-              src={salis2}
-              alt="Stalis Ahmad"
-              className="absolute -top-48 md:-top-64 w-[16rem] md:w-[33rem] h-auto object-contain z-10"
-            />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full flex justify-center items-end">
+            <div className="relative w-[16rem] h-[8rem] md:w-[40rem] md:h-[20rem]">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-jeruk rounded-t-full z-0" />
+              <img
+                src={salis2}
+                alt="Stalis Ahmad"
+                className="absolute -top-20 left-1/2 -translate-x-1/2 w-[15rem] md:w-[30rem] h-auto object-contain z-10"
+              />
+            </div>
           </div>
         </div>
       </div>
