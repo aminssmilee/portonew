@@ -7,6 +7,7 @@ import Project from './pages/Project';
 import Scroll from './pages/Scroll';
 import { Contact } from 'lucide-react';
 import Contac from './pages/Contact';
+import MoreAbout from './pages/MoreAbout';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Scroll/>
         <Contac />
       </div>
+      {/* <MoreAbout /> */}
     </>
   );
 }

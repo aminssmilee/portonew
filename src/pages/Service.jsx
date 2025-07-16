@@ -16,10 +16,10 @@ const Service = () => {
         <Crosshair containerRef={containerRef} color="#ffffff" />
 
         <div className="flex justify-between items-start mb-16">
-          <h1 className="text-4xl font-bold text-white">
-            My <span className="text-red-500">Services</span>
+          <h1 className="text-4xl md:text-4xl font-bold text-white">
+            My <span className="text-red-500 text-4xl md:text-4xl">Services</span>
           </h1>
-          <p className="text-gray-300 max-w-xl text-left">
+          <p className="text-gray-300 max-w-xl text-left hidden md:block">
             I am a passionate developer with a keen interest in creating
             innovative solutions. My journey in the tech world has been driven
             by curiosity and a desire to learn continuously.

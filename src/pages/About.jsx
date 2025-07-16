@@ -11,10 +11,10 @@ const About = () => (
         <h1 className="text-4xl font-bold text-white">
           My <span className="text-red-500">Service</span>
         </h1>
-        <p className="text-gray-100 text-left max-w-2xl pb-5">
+        <p className=" md:text-base text-teal-900 text-left max-w-2xl pb-5 md:-mt-8">
           I am a passionate developer with a keen interest in creating
           innovative solutions. My journey in the tech world has been driven by
-          curiosity and a desire to learn continuously.
+          curiosity and a desire to learn continuously...
         </p>
       </div>
 

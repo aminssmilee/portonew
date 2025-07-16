@@ -87,7 +87,7 @@ const Home = () => {
               <img
                 src={salis2}
                 alt="Stalis Ahmad"
-                className="absolute -top-20 left-1/2 -translate-x-1/2 w-[15rem] md:w-[30rem] h-auto object-contain z-10"
+                className="absolute -top-20 left-1/2 -translate-x-1/2 w-[15rem] md:w-[30rem] h-auto object-contain z-10 pointer-events-none"
               />
             </div>
           </div>
