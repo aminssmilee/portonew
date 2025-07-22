@@ -52,7 +52,7 @@ const Home = () => {
 
           {/* LEFT TEXT */}
           <div
-            className="absolute bottom-28 md:bottom-8 left-0 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 
+            className="absolute bottom-8 md:bottom-8 left-0 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 
                 translate-y-[-6rem] sm:translate-y-[-7rem] md:translate-y-0 z-10"
           >
             <p>
