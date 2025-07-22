@@ -9,7 +9,7 @@ const Home = () => {
       <div className="font-fredoka">
         <Navbar />
 
-        <div className="flex flex-col items-center h-screen relative overflow-hidden px-4 md:px-0">
+        <div className="flex flex-col items-center min-h-screen relative overflow-hidden px-4 md:px-0">
           <div className="flex items-center justify-center mt-24">
             <h1 className="border-black rounded-full border px-5 text-xl">
               Hello!
@@ -19,7 +19,7 @@ const Home = () => {
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold roboto">
               I'm{" "}
-              <span className="text-red-500 text-2xl md:text-4xl text-4xl block md:inline">
+              <span className="text-red-500 md:text-4xl text-4xl block md:inline">
                 <DecryptedText
                   text="Stalis Ahmad"
                   className="text-red-500"
@@ -50,13 +50,16 @@ const Home = () => {
             />
           </span>
 
-          <div className="absolute bottom-0 left-0 mb-10 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 translate-y-[-12rem] md:translate-y-0">
+          <div
+            className="absolute bottom-28 md:bottom-8 left-0 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 
+                translate-y-[-6rem] sm:translate-y-[-8rem] md:translate-y-0 z-10 "
+          >
             <p>
               I am a passionate developer <br /> with a keen interest in
               creating <br /> innovative solutions.
             </p>
 
-            <div className="mt-4 flex gap-3 flex-wrap">
+            <div className="mt-3 flex gap-2 flex-wrap">
               <a
                 href="mailto:salisahmad48@gmail.com"
                 className="bg-red-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-red-600 transition text-sm md:text-base"
