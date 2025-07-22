@@ -5,11 +5,11 @@ import DecryptedText from "../components/DecryptedText";
 
 const Home = () => {
   return (
-    <section id="home">
+    <section id="home" className="h-full">
       <div className="font-fredoka">
         <Navbar />
 
-        <div className="flex flex-col items-center min-h-screen relative overflow-hidden px-4 md:px-0">
+        <div className="flex flex-col items-center min-h-screen relative overflow-hidden px-4 md:px-0 pb-[13rem] md:pb-0">
           <div className="flex items-center justify-center mt-24">
             <h1 className="border-black rounded-full border px-5 text-xl">
               Hello!
@@ -50,9 +50,10 @@ const Home = () => {
             />
           </span>
 
+          {/* LEFT TEXT */}
           <div
             className="absolute bottom-28 md:bottom-8 left-0 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 
-                translate-y-[-6rem] sm:translate-y-[-8rem] md:translate-y-0 z-10 "
+                translate-y-[-6rem] sm:translate-y-[-7rem] md:translate-y-0 z-10"
           >
             <p>
               I am a passionate developer <br /> with a keen interest in
@@ -77,6 +78,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* RIGHT TEXT */}
           <div className="absolute right-0 bottom-0 mb-10 mr-4 md:mr-20 text-center text-sm md:text-xl translate-y-[-3rem] md:translate-y-0">
             <h3 className="text-lg md:text-2xl font-bold text-gray-700">
               ★ 2 Years
@@ -84,6 +86,7 @@ const Home = () => {
             <p className="text-gray-500">Expertise</p>
           </div>
 
+          {/* IMAGE + BACKGROUND */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full flex justify-center items-end">
             <div className="relative w-[16rem] h-[8rem] md:w-[40rem] md:h-[20rem]">
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-jeruk rounded-t-full z-0" />
