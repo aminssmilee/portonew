@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import salis2 from "../assets/salis2.png";
+import salis2 from "../assets/salis.png";
 import Navbar from "../components/Navbar";
 import DecryptedText from "../components/DecryptedText";
 
@@ -50,7 +50,7 @@ const Home = () => {
             />
           </span>
 
-          <div className="absolute bottom-0 left-0 mb-10 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 translate-y-[-6rem] md:translate-y-0 z-10">
+          <div className="absolute bottom-0 left-0 mb-28 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 translate-y-[-6rem] md:translate-y-0 z-10">
             <p>
               I am a passionate developer <br /> with a keen interest in
               creating <br /> innovative solutions.
@@ -82,12 +82,13 @@ const Home = () => {
           </div>
 
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full flex justify-center items-end">
-            <div className="relative w-[16rem] h-[8rem] md:w-[40rem] md:h-[20rem] overflow-hidden rounded-t-full">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-jeruk z-0" />
+            <div className="relative w-[16rem] h-[8rem] md:w-[40rem] md:h-[20rem]">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-jeruk rounded-t-full z-0" />
+
               <img
                 src={salis2}
                 alt="Stalis Ahmad"
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-[15rem] md:w-[30rem] h-auto object-cover z-10 pointer-events-none"
+                className="absolute -top-28 md:-top-40 left-1/2 -translate-x-1/2 w-[15rem] md:w-[30rem] h-auto object-contain z-10 pointer-events-none"
               />
             </div>
           </div>
