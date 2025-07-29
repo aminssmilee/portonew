@@ -12,7 +12,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center bg-[#f3f4f6] px-6 py-20 font-fredoka"
+      className="min-h-screen flex items-center justify-center rounded-t-[3rem]  px-6 py-20 font-fredoka"
     >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side */}

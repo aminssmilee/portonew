@@ -1,115 +1,357 @@
 import React from "react";
-import banner from "../assets/service/landingpage.jpg"; // Adjust the path as necessary
+import logo from "../assets/service/salis2.png";
+import react from "../assets/logo/react.svg";
+// import laravel from "../assets/logo/laravel.svg";
+import javascript from "../assets/logo/javascript.svg";
+import tailwind from "../assets/logo/tailwind.svg";
 
 const MoreAbout = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen md:min-h-[150vh] bg-gray-100 font-fredoka"
-    >
-      <div className="p-10">
-        <div>
-          <h1 className="text-black justify-center items-center text-center text-8xl">
-            About Us.
-          </h1>
-        </div>
-        <div className="flex flex-col md:flex-row justify-between items-start gap-80 mt-12">
-          <div className="flex flex-col gap-4 ">
-            <h3>About_Us.</h3>
-            <h3>Our_team.</h3>
-            <h3>Press.</h3>
-          </div>
-          <div className="text-justify">
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
+    <section id="about" className="min-h-screen bg-gray-50 font-sans">
+      {/* Hero Profile Section */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            {/* Profile Card */}
+            <div className="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Profile Image with Accent */}
+                <div className="relative w-32 h-32">
+                  <div className="w-32 h-32 rounded-full bg-jeruk flex items-center justify-center text-white text-2xl font-bold shadow-xl overflow-hidden">
+                    <img
+                      src={logo}
+                      alt="logo"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                </div>
+
+                {/* Profile Info */}
+                <div className="flex-1 text-center md:text-left">
+                  <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                    About Me
+                  </h1>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Frontend Developer • Backend Developer • Mobile Developer •
+                    Fullstack Developer
+                  </p>
+                  <p className="text-gray-700 leading-relaxed max-w-lg text-justify">
+                    Hey there! I'm a tech enthusiast and aspiring web developer
+                    from Lamongan, East Java, Indonesia. Currently, I'm on an
+                    exciting academic journey at Politeknik Elektronika Negeri
+                    Surabaya, majoring in Informatics Engineering. I have a
+                    passion for crafting innovative solutions and a keen
+                    interest.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats Cards */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">
+                    15+
+                  </div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">
+                    Projects Completed
+                  </div>
+                </div>
+              </div>
+              {/* <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">
+                    25+
+                  </div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">
+                    Team Members
+                  </div>
+                </div>
+              </div> */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-gray-900 mb-1">
+                    2+
+                  </div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">
+                    Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <img
-        src={banner}
-        alt="About Us Banner"
-        className="w-full h-[50vh] object-cover rounded-lg"
-      />
-      <div className="flex justify-between items-center py-8 md:p-20 gap-6 flex-col md:flex-row">
-        <div className="max-w-xl">
-          <h1 className="text-xl md:text-4xl text-black font-semibold">
-            Our work does make sense only if it is a faithful witness of its
-            time.
-          </h1>
-        </div>
-        <div className="w-full md:w-[400px]">
-          <img
-            src={banner}
-            alt="About Us Banner"
-            className="w-full h-60 rounded-lg shadow-lg object-cover"
-          />
+
+      {/* Skills/Tools Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center justify-center gap-4">
+              <span className="flex-grow border-t border-gray-300"></span>
+              My Favorite Tools
+              <span className="flex-grow border-t border-gray-300"></span>
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {/* Tool Cards */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-blue-600 rounded">
+                    <img
+                      src={react}
+                      alt="React"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">98%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  React
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-yellow-500 rounded">
+                    <img
+                      src={javascript}
+                      alt="Laravel"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">92%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  JavaScript
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-gray-700 rounded"></div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  Node.js
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-purple-600 rounded">
+                    <img
+                      src={tailwind}
+                      alt="tailwind"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">85%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  Tailwind
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-green-600 rounded"></div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  MongoDB
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <div className="w-8 h-8 bg-red-600 rounded"></div>
+                </div>
+                <div className="text-2xl font-bold text-gray-900 mb-1">95%</div>
+                <div className="text-xs text-gray-600 uppercase tracking-wide">
+                  Git
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="p-10">
-        <div className="flex flex-col md:flex-row justify-between items-start gap-80 mt-12">
-          <img
-            src={banner}
-            alt="About Us Banner"
-            className="w-full h-[50vh] object-cover rounded-lg"
-          />
-          <div className="text-justify">
-            <h1 className="text-black justify-center items-center text-center text-8xl">
-          The team.
-        </h1>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
-            <p>
-              We are a team of passionate developers and designers dedicated to
-              creating innovative solutions that make a difference. Our journey
-              in the tech world has been driven by curiosity and a desire to
-              learn continuously. We believe in the power of collaboration and
-              strive to deliver exceptional results for our clients.
-            </p>
+
+      {/* Services Navigation */}
+      <div className="bg-gray-50 py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-black rounded-2xl p-6 shadow-lg">
+            <div className="flex flex-wrap justify-center gap-8 text-white">
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide">
+                  Website Design
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  Mobile Apps
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  E-commerce
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  Consulting
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Experience & Education Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Company History */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Company Journey
+                </h3>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Founded</h4>
+                    <p className="text-sm text-gray-600">Started our journey</p>
+                  </div>
+                  <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
+                    2019 - Now
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Expansion</h4>
+                    <p className="text-sm text-gray-600">Grew our team</p>
+                  </div>
+                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                    2020 - 2022
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Innovation</h4>
+                    <p className="text-sm text-gray-600">New tech adoption</p>
+                  </div>
+                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                    2023 - Now
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Achievements */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Achievements
+                </h3>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Best Startup
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      Tech Innovation Award
+                    </p>
+                  </div>
+                  <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
+                    2023
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Top Developer
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      Regional Recognition
+                    </p>
+                  </div>
+                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                    2022
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Client Choice
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      Excellence in Service
+                    </p>
+                  </div>
+                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                    2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="bg-gray-50 py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-black rounded-2xl p-6 shadow-lg">
+            <div className="flex flex-wrap justify-center gap-8 text-white">
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide">
+                  About Us
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  Services
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  Portfolio
+                </span>
+              </div>
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                <span className="text-sm uppercase tracking-wide text-gray-300">
+                  Contact
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

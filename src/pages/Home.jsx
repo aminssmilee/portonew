@@ -9,7 +9,7 @@ const Home = () => {
       <div className="font-fredoka">
         <Navbar />
 
-        <div className="flex flex-col items-center min-h-screen relative overflow-x-hidden px-4 md:px-0 pb-40">
+        <div className="flex flex-col items-center bg-gray-100 rounded-b-[3rem] min-h-screen relative overflow-x-hidden px-4 md:px-0 pb-40">
           <div className="flex items-center justify-center mt-24">
             <h1 className="border-black rounded-full border px-5 text-xl">
               Hello!

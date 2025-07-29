@@ -14,6 +14,7 @@ function App() {
     <>
       <div>
         <Home />
+        <MoreAbout />
         <Service />
         <Project />
         <Scroll/>
