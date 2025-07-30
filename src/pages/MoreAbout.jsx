@@ -4,13 +4,14 @@ import react from "../assets/logo/react.svg";
 // import laravel from "../assets/logo/laravel.svg";
 import javascript from "../assets/logo/javascript.svg";
 import tailwind from "../assets/logo/tailwind.svg";
+import CurvedLoop from "../components/CurvedLoop";
 
 const MoreAbout = () => {
   return (
-    <section id="about" className="min-h-screen bg-gray-50 font-sans">
+    <section id="about" className="min-h-screen bg-gray-50 font-fredoka">
       {/* Hero Profile Section */}
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="max-w-7xl mx-auto px-1 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             {/* Profile Card */}
             <div className="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -98,10 +99,10 @@ const MoreAbout = () => {
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {/* Tool Cards */}
+              {/* React */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-blue-600 rounded">
+                  <div className="w-8 h-8 rounded">
                     <img
                       src={react}
                       alt="React"
@@ -115,12 +116,13 @@ const MoreAbout = () => {
                 </div>
               </div>
 
+              {/* JavaScript */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-yellow-500 rounded">
+                  <div className="w-8 h-8 rounded">
                     <img
                       src={javascript}
-                      alt="Laravel"
+                      alt="JavaScript"
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -131,9 +133,16 @@ const MoreAbout = () => {
                 </div>
               </div>
 
+              {/* Node.js */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-gray-700 rounded"></div>
+                  <div className="w-8 h-8 rounded">
+                    <img
+                      src={tailwind}
+                      alt="Node.js"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
                 <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
                 <div className="text-xs text-gray-600 uppercase tracking-wide">
@@ -141,12 +150,13 @@ const MoreAbout = () => {
                 </div>
               </div>
 
+              {/* Tailwind */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-purple-600 rounded">
+                  <div className="w-8 h-8 rounded">
                     <img
                       src={tailwind}
-                      alt="tailwind"
+                      alt="Tailwind"
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -157,9 +167,16 @@ const MoreAbout = () => {
                 </div>
               </div>
 
+              {/* MongoDB */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-green-600 rounded"></div>
+                  <div className="w-8 h-8 rounded">
+                    <img
+                      src={tailwind}
+                      alt="MongoDB"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
                 <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
                 <div className="text-xs text-gray-600 uppercase tracking-wide">
@@ -167,9 +184,16 @@ const MoreAbout = () => {
                 </div>
               </div>
 
+              {/* Git */}
               <div className="text-center">
                 <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 bg-red-600 rounded"></div>
+                  <div className="w-8 h-8 rounded">
+                    <img
+                      src={tailwind}
+                      alt="Git"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
                 <div className="text-2xl font-bold text-gray-900 mb-1">95%</div>
                 <div className="text-xs text-gray-600 uppercase tracking-wide">
@@ -182,37 +206,15 @@ const MoreAbout = () => {
       </div>
 
       {/* Services Navigation */}
-      <div className="bg-gray-50 py-8">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-black rounded-2xl p-6 shadow-lg">
-            <div className="flex flex-wrap justify-center gap-8 text-white">
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide">
-                  Website Design
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  Mobile Apps
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  E-commerce
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  Consulting
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className=" bg-white py-8">
+        <CurvedLoop
+          marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦"
+          speed={1}
+          curveAmount={10}
+          direction="left"
+          interactive={true}
+        />
+        {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
       </div>
 
       {/* Experience & Education Section */}
@@ -323,37 +325,15 @@ const MoreAbout = () => {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="bg-gray-50 py-8">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-black rounded-2xl p-6 shadow-lg">
-            <div className="flex flex-wrap justify-center gap-8 text-white">
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide">
-                  About Us
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  Services
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  Portfolio
-                </span>
-              </div>
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                <span className="text-sm uppercase tracking-wide text-gray-300">
-                  Contact
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className=" bg-white py-8">
+        <CurvedLoop
+          marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦"
+          speed={1}
+          curveAmount={10}
+          direction="left"
+          interactive={true}
+        />
+        {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
       </div>
     </section>
   );

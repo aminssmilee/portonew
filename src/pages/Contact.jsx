@@ -6,7 +6,8 @@ import {
   FaLinkedin,
   FaDiscord,
 } from 'react-icons/fa';
-import img1 from '../assets/amns1.jpg';
+// import img1 from '../assets/amns1.jpg';
+import Lanyard from '../components/Lanyard';
 
 function Contact() {
   return (
@@ -71,11 +72,12 @@ function Contact() {
 
         {/* Right Side */}
         <div className="flex justify-center md:justify-end">
-          <img
+          <Lanyard />
+          {/* <img
             src={img1}
             alt="Desk Setup"
             className="shadow-xl w-[90%] md:w-[80%] grayscale"
-          />
+          /> */}
         </div>
       </div>
     </section>
