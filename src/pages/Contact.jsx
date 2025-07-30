@@ -71,7 +71,7 @@ function Contact() {
         </div>
 
         {/* Right Side */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end border-2 border-gray-200 bg-gray-100">
           <Lanyard />
           {/* <img
             src={img1}

@@ -335,6 +335,10 @@ const MoreAbout = () => {
         />
         {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
       </div>
+
+      <div>
+        {/* <SmoothScroll /> */}
+      </div>
     </section>
   );
 };
