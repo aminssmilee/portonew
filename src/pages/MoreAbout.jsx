@@ -5,6 +5,8 @@ import react from "../assets/logo/react.svg";
 import javascript from "../assets/logo/javascript.svg";
 import tailwind from "../assets/logo/tailwind.svg";
 import CurvedLoop from "../components/CurvedLoop";
+import { Scroll } from "lucide-react";
+import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
 
 const MoreAbout = () => {
   return (
@@ -207,13 +209,13 @@ const MoreAbout = () => {
 
       {/* Services Navigation */}
       <div className=" bg-white py-8">
-        <CurvedLoop
+        {/* <CurvedLoop
           marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦"
           speed={1}
           curveAmount={10}
           direction="left"
           interactive={true}
-        />
+        /> */}
         {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
       </div>
 
@@ -325,20 +327,9 @@ const MoreAbout = () => {
       </div>
 
       {/* Bottom Navigation */}
-      <div className=" bg-white py-8">
-        <CurvedLoop
-          marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦"
-          speed={1}
-          curveAmount={10}
-          direction="left"
-          interactive={true}
-        />
-        {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
-      </div>
+      
 
-      <div>
-        {/* <SmoothScroll /> */}
-      </div>
+      <div>{/* <SmoothScroll /> */}</div>
     </section>
   );
 };

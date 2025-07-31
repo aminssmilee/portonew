@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import lp from "../assets/service/landingpage.jpg";
 import ui from "../assets/service/uiux.jpg";
 import wd from "../assets/service/webdesign.jpg";
+import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
 
 const projects = [
   {
