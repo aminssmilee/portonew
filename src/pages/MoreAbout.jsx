@@ -37,12 +37,12 @@ const MoreAbout = () => {
                   <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                     About Me
                   </h1>
-                  <p className="text-lg text-gray-600 mb-4">
+                  <p className="text-lg text-gray-800 mb-4 max-w-lg text-justify">
                     20 years old | Informatics Engineering Student | Aspiring
                     Software Developer | Frontend Developer | Backend Developer
                     | Mobile Developer | Fullstack Developer | Tech Enthusiast
                   </p>
-                  <p className="text-gray-700 leading-relaxed max-w-lg text-justify">
+                  <p className="text-gray-500 leading-relaxed max-w-lg text-justify">
                     Hey there! I'm a tech enthusiast and aspiring web developer
                     from Lamongan, East Java, Indonesia. Currently, I'm pursuing
                     a Diploma (D3) in Informatics Engineering at the Electronic
