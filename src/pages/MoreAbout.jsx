@@ -43,11 +43,13 @@ const MoreAbout = () => {
                   </p>
                   <p className="text-gray-700 leading-relaxed max-w-lg text-justify">
                     Hey there! I'm a tech enthusiast and aspiring web developer
-                    from Lamongan, East Java, Indonesia. Currently, I'm on an
-                    exciting academic journey at Politeknik Elektronika Negeri
-                    Surabaya, majoring in Informatics Engineering. I have a
-                    passion for crafting innovative solutions and a keen
-                    interest.
+                    from Lamongan, East Java, Indonesia. Currently, I'm pursuing
+                    a Diploma (D3) in Informatics Engineering at the Electronic
+                    Engineering Polytechnic Institute of Surabaya (PENS). I have
+                    strong programming skills in JavaScript (React.js), PHP
+                    (Laravel), and Flutter. I'm experienced in application
+                    development projects and passionate about crafting
+                    innovative software solutions.
                   </p>
                 </div>
               </div>
@@ -327,7 +329,6 @@ const MoreAbout = () => {
       </div>
 
       {/* Bottom Navigation */}
-      
 
       <div>{/* <SmoothScroll /> */}</div>
     </section>
