@@ -1,12 +1,15 @@
 import React from "react";
 import logo from "../assets/service/salis2.png";
-import react from "../assets/logo/react.svg";
-// import laravel from "../assets/logo/laravel.svg";
-import javascript from "../assets/logo/javascript.svg";
-import tailwind from "../assets/logo/tailwind.svg";
+// import reactImg from "../assets/logo/javascript.svg";
+// import nodeImg from "../assets/logo/javascript.svg";
+// import tailwindImg from "../assets/logo/javascript.svg";
+// import mongodbImg from "../assets/logo/javascript.svg";
+// import gitImg from "../assets/logo/javascript.svg";
+
 import CurvedLoop from "../components/CurvedLoop";
 import { Scroll } from "lucide-react";
 import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
+import FallingText from "../components/FallingTex";
 
 const MoreAbout = () => {
   return (
@@ -93,121 +96,31 @@ const MoreAbout = () => {
         </div>
       </div>
 
+      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+        Skills & Technologies
+      </h2>
       {/* Skills/Tools Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center justify-center gap-4">
-              <span className="flex-grow border-t border-gray-300"></span>
-              My Favorite Tools
-              <span className="flex-grow border-t border-gray-300"></span>
-            </h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {/* React */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={react}
-                      alt="React"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">98%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  React
-                </div>
-              </div>
-
-              {/* JavaScript */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={javascript}
-                      alt="JavaScript"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">92%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  JavaScript
-                </div>
-              </div>
-
-              {/* Node.js */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={tailwind}
-                      alt="Node.js"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  Node.js
-                </div>
-              </div>
-
-              {/* Tailwind */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={tailwind}
-                      alt="Tailwind"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">85%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  Tailwind
-                </div>
-              </div>
-
-              {/* MongoDB */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={tailwind}
-                      alt="MongoDB"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">90%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  MongoDB
-                </div>
-              </div>
-
-              {/* Git */}
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                  <div className="w-8 h-8 rounded">
-                    <img
-                      src={tailwind}
-                      alt="Git"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-900 mb-1">95%</div>
-                <div className="text-xs text-gray-600 uppercase tracking-wide">
-                  Git
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="h-[20rem] bg-gray-50 py-16">
+        <FallingText
+          text={`My core skills include React.js Laravel PHP Flutter JavaScript Tailwind CSS MongoDB and Git. These technologies form the foundation of my development toolkit.`}
+          highlightWords={[
+            "React.js",
+            "Laravel",
+            "PHP",
+            "Flutter",
+            "JavaScript",
+            "Tailwind CSS",
+            "MongoDB",
+            "Git",
+          ]}
+          highlightClass="highlighted"
+          trigger="hover"
+          backgroundColor="transparent"
+          wireframes={false}
+          gravity={0.56}
+          fontSize="1rem"
+          mouseConstraintStiffness={0.9}
+        />
       </div>
 
       {/* Services Navigation */}
