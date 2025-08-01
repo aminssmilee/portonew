@@ -38,8 +38,9 @@ const MoreAbout = () => {
                     About Me
                   </h1>
                   <p className="text-lg text-gray-600 mb-4">
-                    Frontend Developer • Backend Developer • Mobile Developer •
-                    Fullstack Developer
+                    20 years old | Informatics Engineering Student | Aspiring
+                    Software Developer | Frontend Developer | Backend Developer
+                    | Mobile Developer | Fullstack Developer | Tech Enthusiast
                   </p>
                   <p className="text-gray-700 leading-relaxed max-w-lg text-justify">
                     Hey there! I'm a tech enthusiast and aspiring web developer
