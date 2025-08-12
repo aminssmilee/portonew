@@ -1,59 +1,114 @@
-import React from "react";
-import logo from "../assets/service/salis2.png";
-// import reactImg from "../assets/logo/javascript.svg";
-// import nodeImg from "../assets/logo/javascript.svg";
-// import tailwindImg from "../assets/logo/javascript.svg";
-// import mongodbImg from "../assets/logo/javascript.svg";
-// import gitImg from "../assets/logo/javascript.svg";
-
-import CurvedLoop from "../components/CurvedLoop";
-import { Scroll } from "lucide-react";
-import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
-import FallingText from "../components/FallingTex";
+import { GraduationCap, MapPin, Calendar, Award, Code, Database, Smartphone, Globe } from "lucide-react"
+import profile from "../assets/saya.jpg"
 
 const MoreAbout = () => {
+  const skills = {
+    Frontend: ["React.js", "JavaScript", "Tailwind CSS", "Bootstrap"],
+    Backend: ["Node.js", "Express.js", "Laravel", "PHP", "Springboot", "REST APIs",],
+    Mobile: ["Flutter", "Dart", "React Native"],
+    Database: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
+    "DevOps & Tools": ["AWS", "Git", "GitHub", "Agile"],
+  }
+
+  const timeline = [
+    {
+      year: "2022 - Present",
+      title: "Informatics Engineering Student",
+      organization: "PENS (Electronic Engineering Polytechnic Institute of Surabaya)",
+      description: "Pursuing Diploma (D3) in Informatics Engineering with focus on software development",
+      type: "education",
+    },
+    {
+      year: "2023 - Present",
+      title: "Freelance Full-Stack Developer",
+      organization: "Independent",
+      description: "Developing web and mobile applications for various clients using modern technologies",
+      type: "experience",
+    },
+    {
+      year: "2022 - 2023",
+      title: "Frontend Developer",
+      organization: "Local Tech Projects",
+      description: "Built responsive web applications using React.js and modern CSS frameworks",
+      type: "experience",
+    },
+  ]
+
+  const achievements = [
+    {
+      title: "15+ Projects Completed",
+      description: "Successfully delivered web and mobile applications",
+      year: "2022-2024",
+    },
+    {
+      title: "Full-Stack Proficiency",
+      description: "Mastered both frontend and backend development",
+      year: "2023",
+    },
+    {
+      title: "Modern Tech Stack",
+      description: "Expertise in React, Laravel, Flutter ecosystem",
+      year: "2024",
+    },
+  ]
+
   return (
-    <section id="about" className="min-h-screen bg-gray-50 font-fredoka">
-      {/* Hero Profile Section */}
+    <section id="about" className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-fredoka">
+      {/* Hero Section */}
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-1 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-            {/* Profile Card */}
-            <div className="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                {/* Profile Image with Accent */}
-                <div className="relative w-32 h-32">
-                  <div className="w-32 h-32 rounded-full bg-jeruk flex items-center justify-center text-white text-2xl font-bold shadow-xl overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            {/* Main Profile Card */}
+            <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="flex flex-col md:flex-row items-start gap-8">
+                {/* Profile Image */}
+                <div className="relative flex-shrink-0">
+                  <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-jeruk to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-xl overflow-hidden">
                     <img
-                      src={logo}
-                      alt="logo"
-                      className="w-full h-full object-cover"
+                      src={profile}
+                      alt="Profile"
+                      className="w-full h-full object-cover rounded-2xl"
                     />
                   </div>
-                  <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                  <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center border-4 border-white">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                 </div>
 
                 {/* Profile Info */}
-                <div className="flex-1 text-center md:text-left">
-                  <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                    About Me
-                  </h1>
-                  <p className="text-lg text-gray-800 mb-4 max-w-lg text-justify">
-                    20 years old | Informatics Engineering Student | Aspiring
-                    Software Developer | Frontend Developer | Backend Developer
-                    | Mobile Developer | Fullstack Developer | Tech Enthusiast
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900">About Me</h1>
+                    <div className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                      Available for Work
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-4 mb-4 text-gray-600">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      <span className="text-sm">20 years old</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <MapPin className="w-4 h-4" />
+                      <span className="text-sm">Lamongan, East Java, Indonesia</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <GraduationCap className="w-4 h-4" />
+                      <span className="text-sm">PENS | EEPIS Student</span>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 leading-relaxed mb-4 text-justify">
+                    I'm a passionate full-stack developer and Informatics Engineering student at PENS | EEPIS. With expertise in
+                    modern web and mobile technologies, I specialize in creating scalable applications using React.js,
+                    Laravel, and Flutter.
                   </p>
-                  <p className="text-gray-500 leading-relaxed max-w-lg text-justify">
-                    Hey there! I'm a tech enthusiast and aspiring web developer
-                    from Lamongan, East Java, Indonesia. Currently, I'm pursuing
-                    a Diploma (D3) in Informatics Engineering at the Electronic
-                    Engineering Polytechnic Institute of Surabaya (PENS). I have
-                    strong programming skills in JavaScript (React.js), PHP
-                    (Laravel), and Flutter. I'm experienced in application
-                    development projects and passionate about crafting
-                    innovative software solutions.
+
+                  <p className="text-gray-600 leading-relaxed text-justify">
+                    My journey in software development spans over 2 years, during which I've completed 15+ projects
+                    ranging from responsive web applications to cross-platform mobile apps. I'm committed to writing
+                    clean, efficient code and staying updated with the latest industry trends.
                   </p>
                 </div>
               </div>
@@ -61,34 +116,22 @@ const MoreAbout = () => {
 
             {/* Stats Cards */}
             <div className="space-y-4">
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">
-                    15+
-                  </div>
-                  <div className="text-sm text-gray-600 uppercase tracking-wide">
-                    Projects Completed
-                  </div>
+                  <div className="text-3xl font-bold text-jeruk mb-1">15+</div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">Projects Completed</div>
                 </div>
               </div>
-              {/* <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">
-                    25+
-                  </div>
-                  <div className="text-sm text-gray-600 uppercase tracking-wide">
-                    Team Members
-                  </div>
+                  <div className="text-3xl font-bold text-purple-600 mb-1">2+</div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">Years Experience</div>
                 </div>
-              </div> */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">
-                    2+
-                  </div>
-                  <div className="text-sm text-gray-600 uppercase tracking-wide">
-                    Years Experience
-                  </div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">5+</div>
+                  <div className="text-sm text-gray-600 uppercase tracking-wide">Tech Stacks</div>
                 </div>
               </div>
             </div>
@@ -96,157 +139,116 @@ const MoreAbout = () => {
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-        Skills & Technologies
-      </h2>
-      {/* Skills/Tools Section */}
-      <div className="h-[20rem] bg-gray-50 py-16">
-        <FallingText
-          text={`My core skills include React.js Laravel PHP Flutter JavaScript Tailwind CSS MongoDB and Git. These technologies form the foundation of my development toolkit.`}
-          highlightWords={[
-            "React.js",
-            "Laravel",
-            "PHP",
-            "Flutter",
-            "JavaScript",
-            "Tailwind CSS",
-            "MongoDB",
-            "Git",
-          ]}
-          highlightClass="highlighted"
-          trigger="hover"
-          backgroundColor="transparent"
-          wireframes={false}
-          gravity={0.56}
-          fontSize="1rem"
-          mouseConstraintStiffness={0.9}
-        />
-      </div>
+      {/* Skills Section */}
+      <div className="bg-white">
+        <div className="py-16 bg-gray-900 rounded-[3rem]">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-white mb-4">Skills & Technologies</h2>
+              <p className="text-gray-100 max-w-2xl mx-auto">
+                A comprehensive toolkit of modern technologies for building scalable applications
+              </p>
+            </div>
 
-      {/* Services Navigation */}
-      <div className=" bg-white py-8">
-        {/* <CurvedLoop
-          marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦"
-          speed={1}
-          curveAmount={10}
-          direction="left"
-          interactive={true}
-        /> */}
-        {/* <CurvedLoop marqueeText="Web Developer ✦ Mobile Developer ✦ Frontend Programmer ✦ Backend Programmer ✦" /> */}
-      </div>
-
-      {/* Experience & Education Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Company History */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-white rounded-full"></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {Object.entries(skills).map(([category, skillList]) => (
+                <div
+                  key={category}
+                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                      {category === "Frontend" && <Globe className="w-5 h-5 text-white" />}
+                      {category === "Backend" && <Code className="w-5 h-5 text-white" />}
+                      {category === "Mobile" && <Smartphone className="w-5 h-5 text-white" />}
+                      {category === "Database" && <Database className="w-5 h-5 text-white" />}
+                      {category === "DevOps & Tools" && <Award className="w-5 h-5 text-white" />}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900">{category}</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {skillList.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-blue-100 hover:text-blue-700 transition-colors"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Company Journey
-                </h3>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Timeline Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Experience & Education Timeline */}
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Experience & Education</h3>
               </div>
 
               <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Founded</h4>
-                    <p className="text-sm text-gray-600">Started our journey</p>
+                {timeline.map((item, index) => (
+                  <div key={index} className="relative pl-6 border-l-2 border-gray-200 last:border-l-0">
+                    <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+                    <div className="pb-6">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">
+                          {item.year}
+                        </span>
+                        <span
+                          className={`px-2 py-1 rounded-full text-xs font-medium ${item.type === "education" ? "bg-green-100 text-green-700" : "bg-purple-100 text-purple-700"
+                            }`}
+                        >
+                          {item.type === "education" ? "Education" : "Experience"}
+                        </span>
+                      </div>
+                      <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
+                      <p className="text-sm text-blue-600 mb-2">{item.organization}</p>
+                      <p className="text-sm text-gray-600">{item.description}</p>
+                    </div>
                   </div>
-                  <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
-                    2019 - Now
-                  </span>
-                </div>
-
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Expansion</h4>
-                    <p className="text-sm text-gray-600">Grew our team</p>
-                  </div>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                    2020 - 2022
-                  </span>
-                </div>
-
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Innovation</h4>
-                    <p className="text-sm text-gray-600">New tech adoption</p>
-                  </div>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                    2023 - Now
-                  </span>
-                </div>
+                ))}
               </div>
             </div>
 
             {/* Achievements */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-white rounded-full"></div>
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center">
+                  <Award className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Achievements
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-900">Key Achievements</h3>
               </div>
 
               <div className="space-y-6">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Best Startup
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Tech Innovation Award
-                    </p>
+                {achievements.map((achievement, index) => (
+                  <div key={index} className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                    <div className="flex justify-between items-start mb-2">
+                      <h4 className="font-semibold text-gray-900">{achievement.title}</h4>
+                      <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
+                        {achievement.year}
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-600">{achievement.description}</p>
                   </div>
-                  <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
-                    2023
-                  </span>
-                </div>
-
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Top Developer
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Regional Recognition
-                    </p>
-                  </div>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                    2022
-                  </span>
-                </div>
-
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Client Choice
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      Excellence in Service
-                    </p>
-                  </div>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                    2021
-                  </span>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Bottom Navigation */}
-
-      <div>{/* <SmoothScroll /> */}</div>
     </section>
-  );
-};
+  )
+}
 
-export default MoreAbout;
+export default MoreAbout
