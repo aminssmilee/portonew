@@ -18,11 +18,11 @@ function Contact() {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900">Get In Touch</h1>
-          <p className="text-gray-600">
+          <h1 className="text-4xl font-bold text-bravepink">Get In Touch</h1>
+          <p className="text-herogreen">
             Feel free to contact me if you have any questions or just want to say hi.
           </p>
-          <div className="bg-white border border-gray-300 px-4 py-2 inline-block rounded-md font-mono text-sm shadow">
+          <div className="bg-white border border-resistanceblue text-resistanceblue px-4 py-2 inline-block rounded-md font-mono text-sm shadow">
             salisahmad48@gmail.com
           </div>
 
@@ -71,14 +71,19 @@ function Contact() {
         </div>
 
         {/* Right Side */}
-        <div className="flex justify-center md:justify-end border-2 border-gray-200 bg-gray-100">
+        <div className="relative flex justify-center md:justify-end border-2 border-gray-200 bg-gray-100 overflow-hidden">
+          {/* Lapisan Gradient 3 Warna */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-herogreen via-bravepink to-resistanceblue pointer-events-none"></div>
+
+          {/* Konten */}
           <Lanyard />
           {/* <img
-            src={img1}
-            alt="Desk Setup"
-            className="shadow-xl w-[90%] md:w-[80%] grayscale"
-          /> */}
+    src={img1}
+    alt="Desk Setup"
+    className="shadow-xl w-[90%] md:w-[80%] grayscale relative z-10"
+  /> */}
         </div>
+
       </div>
     </section>
   );
