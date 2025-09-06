@@ -58,11 +58,11 @@ const Project = () => {
       className="min-h-screen md:min-h-[110vh] px-4 md:px-10 py-20 bg-white text-white font-fredoka"
     >
       <div className="mb-12 flex flex-col md:flex-row justify-between items-center gap-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-black text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl font-bold text-herogreen text-center md:text-left">
           Let's Have a Look at
-          <br /> my <span className="text-jeruk">Portfolio</span>
+          <br /> my <span className="text-bravepink">Portfolio</span>
         </h1>
-        <button className="text-sm text-jeruk hover:text-red-500 transition">
+        <button className="text-sm text-herogreen hover:text-bravepink transition">
           See More...
         </button>
       </div>
@@ -83,7 +83,7 @@ const Project = () => {
           {visibleProjects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-zinc-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+              className="bg-resistanceblue rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition"
               whileHover={{ scale: 1.02 }}
             >
               <img
@@ -100,7 +100,7 @@ const Project = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-sm px-4 py-2 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white rounded-full transition"
+                  className="inline-block text-sm px-4 py-2 border border-white text-white hover:bg-herogreen hover:text-white rounded-full transition"
                 >
                   View Project
                 </a>
@@ -122,29 +122,29 @@ const Project = () => {
 
       {/* Tags */}
       <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
-        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
+        <span className="text-white border rounded-full p-2 px-4 bg-resistanceblue">
           UI/UX Design
         </span>
-        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
+        <span className="text-white border rounded-full p-2 px-4 bg-resistanceblue">
           Web Developer
         </span>
-        <span className="text-black border rounded-full p-2 px-4 bg-zinc-300">
+        <span className="text-white border rounded-full p-2 px-4 bg-resistanceblue">
           Mobile Developer
         </span>
       </div>
 
       {/* More Text */}
       <div className="mt-10">
-        <h1 className="text-black text-center text-xl md:text-2xl">
-          <span className="text-jeruk">More</span> projects coming soon!
+        <h1 className="text-herogreen text-center text-xl md:text-2xl">
+          <span className="text-resistanceblue">More</span> projects coming soon!
         </h1>
       </div>
 
       {/* Contact Section */}
       <div className="text-center mt-24">
-        <h1 className="text-2xl md:text-4xl font-bold text-black">
+        <h1 className="text-2xl md:text-4xl font-bold text-herogreen">
           Have An Awesome Project <br className="block md:hidden" />
-          Idea? <span className="text-jeruk">Let's Discuss</span>
+          Idea? <span className="text-bravepink">Let's Discuss</span>
         </h1>
 
         {/* Form Email */}
@@ -152,12 +152,12 @@ const Project = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 rounded-full border border-jeruk w-72 focus:outline-none focus:ring-2 focus:ring-jeruk"
+            className="px-4 py-2 rounded-full border border-resistanceblue w-72 focus:outline-none focus:ring-2 focus:ring-resistanceblue"
             required
           />
           <button
             type="submit"
-            className="bg-jeruk text-white px-6 py-2 rounded-full hover:bg-red-500 transition"
+            className="bg-resistanceblue text-white px-6 py-2 rounded-full hover:bg-black transition"
           >
             Back Call
           </button>

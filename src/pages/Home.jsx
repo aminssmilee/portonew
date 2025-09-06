@@ -17,12 +17,12 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold roboto">
+            <h1 className="text-3xl text-resistanceblue md:text-4xl font-bold roboto">
               I'm{" "}
               <span className="text-red-500 md:text-4xl text-4xl block md:inline">
                 <DecryptedText
                   text="Stalis Ahmad"
-                  className="text-red-500"
+                  className="text-herogreen"
                   encryptedClassName="text-black"
                   animateOn="view"
                   sequential={true}
@@ -32,7 +32,7 @@ const Home = () => {
             </h1>
           </div>
 
-          <span className="text-black font-bold text-4xl md:text-9xl text-center">
+          <span className="text-bravepink font-bold text-4xl md:text-9xl text-center">
             <Typewriter
               words={[
                 "Web Developer",
@@ -50,7 +50,7 @@ const Home = () => {
             />
           </span>
 
-          <div className="absolute bottom-0 left-0 mb-28 ml-4 md:ml-10 text-sm md:text-xl font-bold text-gray-500 translate-y-[-6rem] md:translate-y-0 z-10">
+          <div className="absolute bottom-0 left-0 mb-28 ml-4 md:ml-10 text-sm md:text-xl font-bold text-herogreen translate-y-[-6rem] md:translate-y-0 z-10">
             <p>
               I am a passionate developer <br /> with a keen interest in
               creating <br /> innovative solutions.
@@ -59,7 +59,7 @@ const Home = () => {
             <div className="mt-4 flex gap-3 flex-wrap">
               <a
                 href="mailto:salisahmad48@gmail.com"
-                className="bg-red-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-red-600 transition text-sm md:text-base"
+                className="bg-resistanceblue text-white px-5 py-2 rounded-full shadow-md hover:bg-bravepink transition text-sm md:text-base"
               >
                 Hire Me
               </a>
@@ -67,7 +67,7 @@ const Home = () => {
                 href="https://drive.google.com/file/d/194nfx8DW_e9WI8swJKPO9uFN2VpwhRyq/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
-                className="border border-jeruk text-jeruk px-5 py-2 rounded-full shadow-md hover:bg-jeruk hover:text-white transition text-sm md:text-base"
+                className="border border-bravepink text-bravepink px-5 py-2 rounded-full shadow-md hover:bg-herogreen hover:text-white transition text-sm md:text-base"
               >
                 CV
               </a>
@@ -83,7 +83,7 @@ const Home = () => {
 
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full flex justify-center items-end">
             <div className="relative w-[16rem] h-[8rem] md:w-[40rem] md:h-[20rem]">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-jeruk rounded-t-full z-0" />
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full bg-herogreen rounded-t-full z-0" />
 
               <img
                 src={salis2}

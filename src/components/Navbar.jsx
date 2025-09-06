@@ -21,13 +21,25 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
+  // mapping warna background berdasarkan section aktif
+  const bgColors = {
+    home: "bg-black",
+    about: "bg-bravepink",
+    projects: "bg-herogreen",
+    contact: "bg-[#002D72]", // resistance blue
+  };
+
   const linkClass = (id) =>
     `text-base transition ${
-      activeSection === id ? "text-jeruk font-bold" : "text-white"
+      activeSection === id ? "text-yellow-300 font-bold" : "text-white"
     }`;
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 bg-black p-4 rounded-full shadow-lg max-w-4xl w-[90%] z-50">
+    <nav
+      className={`fixed top-6 left-1/2 -translate-x-1/2 
+        ${bgColors[activeSection]} 
+        p-4 rounded-full shadow-lg max-w-4xl w-[90%] z-50 transition-colors duration-500`}
+    >
       <ul className="flex justify-center gap-10 list-none m-0 p-0">
         <li>
           <a href="#home" className={linkClass("home")}>
