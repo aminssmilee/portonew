@@ -11,13 +11,13 @@ const Service = () => {
     <section id="service " className="font-fredoka">
       <div
         ref={containerRef}
-        className="relative min-h-screen bg-zinc-900 rounded-[3rem] shadow-lg px-12 py-20 overflow-hidden"
+        className="relative min-h-screen bg-resistanceblue shadow-lg px-12 py-20 overflow-hidden"
       >
         <Crosshair containerRef={containerRef} color="#ffffff" />
 
         <div className="flex justify-between items-start mb-16">
-          <h1 className="text-4xl md:text-4xl font-bold text-white">
-            My <span className="text-red-500 text-4xl md:text-4xl">Services</span>
+          <h1 className="text-4xl md:text-4xl font-bold text-herogreen">
+            My <span className="text-bravepink text-4xl md:text-4xl">Services</span>
           </h1>
           <p className="text-gray-300 max-w-xl text-left hidden md:block">
             I am a passionate developer with a keen interest in creating
@@ -30,7 +30,7 @@ const Service = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-jeruk transition">
+          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-white hover:text-zinc-800 transition">
             <h2 className="text-xl font-bold mb-4">UI/UX Design</h2>
             <div className="border-b-2 border-gray-500 mb-8"></div>
             <div className="overflow-hidden rounded-xl">
@@ -42,7 +42,7 @@ const Service = () => {
             </div>
           </div>
 
-          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-jeruk transition">
+          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-white hover:text-zinc-800 transition">
             <h2 className="text-xl font-bold mb-4">Web Design</h2>
             <div className="border-b-2 border-gray-500 mb-8"></div>
             <div className="overflow-hidden rounded-xl">
@@ -54,7 +54,7 @@ const Service = () => {
             </div>
           </div>
 
-          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-jeruk transition">
+          <div className="relative group bg-zinc-800 text-white rounded-2xl p-5 shadow-md hover:-translate-y-2 hover:shadow-xl hover:bg-white hover:text-zinc-800 transition">
             <h2 className="text-xl font-bold mb-4">Landing Page</h2>
             <div className="border-b-2 border-gray-500 mb-8"></div>
             <div className="overflow-hidden rounded-xl">

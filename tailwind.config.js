@@ -17,6 +17,7 @@ export default {
         jeruk: "#FF4500", // 🎯 Warna oranye kemerahan seperti jeruk matang
         bravepink: "#e44c99", // 🎯 Warna oranye kemerahan seperti jeruk matang
         herogreen: "#01a923", // 🎯 Warna oranye kemerahan seperti jeruk matang
+        resistanceblue: "#000072", // 🎯 Warna oranye kemerahan seperti jeruk matang
       },
     },
   },
