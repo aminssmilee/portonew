@@ -16,7 +16,7 @@ const ScrollPage = () => {
   }, []);
 
   return (
-    <div className="bg-white text-black flex items-center justify-center w-full overflow-x-hidden">
+    <div className="bg-white text-bravepink flex items-center justify-center w-full overflow-x-hidden">
       <div className="max-w-screen-2xl w-full text-center">
         <ScrollVelocity
           texts={[

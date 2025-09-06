@@ -8,7 +8,7 @@ const Service = () => {
   const containerRef = useRef(null);
 
   return (
-    <section id="service">
+    <section id="service " className="font-fredoka">
       <div
         ref={containerRef}
         className="relative min-h-screen bg-zinc-900 rounded-[3rem] shadow-lg px-12 py-20 overflow-hidden"
